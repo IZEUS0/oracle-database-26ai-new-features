@@ -1,3 +1,16 @@
+/* ===============================================================
+   Author:      Ollear Mena 
+   Company:     ELITEDATA 
+   Script:      Working_with_Schema_Level_Privileges.sql  
+   Lab Title:   Working with Schema-Level Privileges in Oracle Database 26ai  
+   Description: Demonstrates how to grant, revoke, and manage schema-level 
+                privileges in Oracle 26ai, including user creation, 
+                privilege verification, and security testing.  
+   References:  https://docs.oracle.com/en/database/oracle/oracle-database/26/dbseg/
+   Version:     1.0  
+   Date:        SYSDATE  
+   =============================================================== */
+
 drop user if exists bob cascade;
 drop user if exists sally cascade;
 create user bob identified by Oracle123long;
@@ -108,5 +121,6 @@ REVOKE DB_DEVELOPER_ROLE FROM OLLEAR;
 SELECT GRANTED_ROLE FROM DBA_ROLE_PRIVS WHERE GRANTEE='OLLEAR';
 
 drop user IF EXISTS ollear CASCADE;
+
 
 
