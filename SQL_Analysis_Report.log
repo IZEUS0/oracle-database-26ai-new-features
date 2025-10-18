@@ -1,0 +1,208 @@
+Table SALES dropped.
+
+Elapsed: 00:00:00.033
+
+
+Table PRODUCTS dropped.
+
+Elapsed: 00:00:00.023
+
+
+Table SALES created.
+
+Elapsed: 00:00:00.011
+
+
+Table PRODUCTS created.
+
+Elapsed: 00:00:00.009
+
+
+5 rows inserted.
+
+Elapsed: 00:00:00.018
+
+
+6 rows inserted.
+
+Elapsed: 00:00:00.043
+
+
+Explained.
+
+Elapsed: 00:00:00.041
+
+
+PLAN_TABLE_OUTPUT                                                                         
+----------------------------------------------------------------------------------------- 
+Plan hash value: 2499902194                                                               
+                                                                                          
+----------------------------------------------------------------------------------------- 
+| Id  | Operation                    | Name     | Rows  | Bytes | Cost (%CPU)| Time     | 
+----------------------------------------------------------------------------------------- 
+|   0 | SELECT STATEMENT             |          |     1 |    65 |     6   (0)| 00:00:01 | 
+|   1 |  SORT AGGREGATE              |          |     1 |    65 |            |          | 
+|   2 |   MERGE JOIN CARTESIAN       |          |     5 |   325 |     6   (0)| 00:00:01 | 
+|*  3 |    TABLE ACCESS STORAGE FULL | PRODUCTS |     1 |    52 |     3   (0)| 00:00:01 | 
+|   4 |    BUFFER SORT               |          |     5 |    65 |     3   (0)| 00:00:01 | 
+|   5 |     TABLE ACCESS STORAGE FULL| SALES    |     5 |    65 |     3   (0)| 00:00:01 | 
+----------------------------------------------------------------------------------------- 
+                                                                                          
+Predicate Information (identified by operation id):                                       
+---------------------------------------------------                                       
+                                                                                          
+   3 - storage("P"."PROD_NAME"='Lion trouser Set')                                        
+       filter("P"."PROD_NAME"='Lion trouser Set')                                         
+                                                                                          
+Note                                                                                      
+-----                                                                                     
+   - dynamic statistics used: dynamic sampling (level=2)                                  
+                                                                                          
+SQL Analysis Report (identified by operation id/Query Block Name/Object Alias):           
+-------------------------------------------------------------------------------           
+                                                                                          
+   1 -  SEL$1                                                                             
+           -  The query block has 1 cartesian product which may be                        
+              expensive. Consider adding join conditions or removing the                  
+              disconnected tables or views.                                               
+
+
+Elapsed: 00:00:00.590
+30 rows selected.
+
+
+SUM(QUANTITY_SOLD) 
+------------------ 
+                12 
+
+
+Elapsed: 00:00:00.019
+1 rows selected.
+
+
+Explained.
+
+Elapsed: 00:00:00.009
+
+
+PLAN_TABLE_OUTPUT                                                                         
+----------------------------------------------------------------------------------------- 
+Plan hash value: 3977921415                                                               
+                                                                                          
+----------------------------------------------------------------------------------------- 
+| Id  | Operation                    | Name     | Rows  | Bytes | Cost (%CPU)| Time     | 
+----------------------------------------------------------------------------------------- 
+|   0 | SELECT STATEMENT             |          |     1 |    91 |     6   (0)| 00:00:01 | 
+|   1 |  SORT AGGREGATE              |          |     1 |    91 |            |          | 
+|*  2 |   HASH JOIN                  |          |     1 |    91 |     6   (0)| 00:00:01 | 
+|   3 |    JOIN FILTER CREATE        | :BF0000  |     1 |    65 |     3   (0)| 00:00:01 | 
+|*  4 |     TABLE ACCESS STORAGE FULL| PRODUCTS |     1 |    65 |     3   (0)| 00:00:01 | 
+|   5 |    JOIN FILTER USE           | :BF0000  |     5 |   130 |     3   (0)| 00:00:01 | 
+|*  6 |     TABLE ACCESS STORAGE FULL| SALES    |     5 |   130 |     3   (0)| 00:00:01 | 
+----------------------------------------------------------------------------------------- 
+                                                                                          
+Predicate Information (identified by operation id):                                       
+---------------------------------------------------                                       
+                                                                                          
+   2 - access("S"."PROD_ID"="P"."PROD_ID")                                                
+   4 - storage("P"."PROD_NAME"='Lion trouser Set')                                        
+       filter("P"."PROD_NAME"='Lion trouser Set')                                         
+   6 - storage(SYS_OP_BLOOM_FILTER(:BF0000,"S"."PROD_ID"))                                
+       filter(SYS_OP_BLOOM_FILTER(:BF0000,"S"."PROD_ID"))                                 
+                                                                                          
+Note                                                                                      
+-----                                                                                     
+   - dynamic statistics used: dynamic sampling (level=2)                                  
+
+
+Elapsed: 00:00:00.027
+26 rows selected.
+
+
+Explained.
+
+Elapsed: 00:00:00.010
+
+
+PLAN_TABLE_OUTPUT                                                                        
+---------------------------------------------------------------------------------------- 
+Plan hash value: 1594894992                                                              
+                                                                                         
+---------------------------------------------------------------------------------------- 
+| Id  | Operation                   | Name     | Rows  | Bytes | Cost (%CPU)| Time     | 
+---------------------------------------------------------------------------------------- 
+|   0 | SELECT STATEMENT            |          |     2 |   158 |     6   (0)| 00:00:01 | 
+|   1 |  SORT UNIQUE                |          |     2 |   158 |     6   (0)| 00:00:01 | 
+|   2 |   UNION-ALL                 |          |     2 |   158 |     6   (0)| 00:00:01 | 
+|*  3 |    TABLE ACCESS STORAGE FULL| PRODUCTS |     1 |    79 |     3   (0)| 00:00:01 | 
+|*  4 |    TABLE ACCESS STORAGE FULL| PRODUCTS |     1 |    79 |     3   (0)| 00:00:01 | 
+---------------------------------------------------------------------------------------- 
+                                                                                         
+Predicate Information (identified by operation id):                                      
+---------------------------------------------------                                      
+                                                                                         
+   3 - storage("PROD_SUBCATEGORY"='Shirts - Girls')                                      
+       filter("PROD_SUBCATEGORY"='Shirts - Girls')                                       
+   4 - storage("PROD_SUBCATEGORY"='Shirts - Boys')                                       
+       filter("PROD_SUBCATEGORY"='Shirts - Boys')                                        
+                                                                                         
+Note                                                                                     
+-----                                                                                    
+   - dynamic statistics used: dynamic sampling (level=2)                                 
+                                                                                         
+SQL Analysis Report (identified by operation id/Query Block Name/Object Alias):          
+-------------------------------------------------------------------------------          
+                                                                                         
+   1 -  SET$1                                                                            
+           -  The query block contains UNION which may be expensive.                     
+              Consider using UNION ALL if duplicates are allowed or                      
+              uniqueness is guaranteed.                                                  
+
+
+Elapsed: 00:00:00.030
+31 rows selected.
+
+
+Explained.
+
+Elapsed: 00:00:00.005
+
+
+PLAN_TABLE_OUTPUT                                                                       
+--------------------------------------------------------------------------------------- 
+Plan hash value: 2158148551                                                             
+                                                                                        
+--------------------------------------------------------------------------------------- 
+| Id  | Operation                  | Name     | Rows  | Bytes | Cost (%CPU)| Time     | 
+--------------------------------------------------------------------------------------- 
+|   0 | SELECT STATEMENT           |          |     2 |   158 |     6   (0)| 00:00:01 | 
+|   1 |  UNION-ALL                 |          |     2 |   158 |     6   (0)| 00:00:01 | 
+|*  2 |   TABLE ACCESS STORAGE FULL| PRODUCTS |     1 |    79 |     3   (0)| 00:00:01 | 
+|*  3 |   TABLE ACCESS STORAGE FULL| PRODUCTS |     1 |    79 |     3   (0)| 00:00:01 | 
+--------------------------------------------------------------------------------------- 
+                                                                                        
+Predicate Information (identified by operation id):                                     
+---------------------------------------------------                                     
+                                                                                        
+   2 - storage("PROD_SUBCATEGORY"='Shirts - Boys')                                      
+       filter("PROD_SUBCATEGORY"='Shirts - Boys')                                       
+   3 - storage("PROD_SUBCATEGORY"='Shirts - Girls')                                     
+       filter("PROD_SUBCATEGORY"='Shirts - Girls')                                      
+                                                                                        
+Note                                                                                    
+-----                                                                                   
+   - dynamic statistics used: dynamic sampling (level=2)                                
+
+
+Elapsed: 00:00:00.025
+22 rows selected.
+
+
+Table SALES dropped.
+
+Elapsed: 00:00:00.026
+
+
+Table PRODUCTS dropped.
+
+Elapsed: 00:00:00.020
