@@ -1,6 +1,6 @@
 /* ===============================================================
-   Author:      OLLEAR MENA   
-   Company:     ELITEDATA  
+ Reviewer: Ollear Mena
+   Company: ELITEDATA S.L. 
    Script:      If_Exists_DDL.sql  
    Lab Title:   Using IF [NOT] EXISTS in DDL Statements — Oracle Database 26ai  
    Description: Demonstrates the use of the IF [NOT] EXISTS clause for 
@@ -41,3 +41,4 @@ ALTER TABLE IF EXISTS t1 ADD (first_name VARCHAR2(50));
 
 
 DROP TABLE customer CASCADE CONSTRAINTS;
+
