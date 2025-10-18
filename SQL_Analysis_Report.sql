@@ -1,3 +1,21 @@
+/* ===============================================================
+   Author:      OLLEAR MENA  
+   Company:     ELITEDATA
+   Script:      SQL_Analysis_Report.sql  
+   Lab Title:   SQL Analysis and Query Optimization in Oracle Database 26ai  
+   Description: Demonstrates how to generate and interpret SQL execution 
+                plans using EXPLAIN PLAN and DBMS_XPLAN to identify 
+                inefficient operations (Cartesian joins, full scans, unions).  
+                Includes optimization examples with indexed joins and 
+                filtering strategies.  
+   References:  https://docs.oracle.com/en/database/oracle/oracle-database/23/tgsql/
+   Version:     1.0  
+   Date:        SYSDATE  
+   =============================================================== */
+
+
+
+
 DROP TABLE IF EXISTS sales cascade constraints;
 DROP TABLE IF EXISTS products cascade constraints;
 
@@ -74,4 +92,5 @@ WHERE  prod_subcategory = 'Shirts - Girls';
 SELECT * FROM table(DBMS_XPLAN.DISPLAY());
 
 DROP TABLE sales cascade constraints;
+
 DROP TABLE products cascade constraints;
