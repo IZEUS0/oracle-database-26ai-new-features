@@ -1,0 +1,274 @@
+SYSDATE                
+---------------------- 
+10/17/2025, 2:25:09 PM 
+
+
+Elapsed: 00:00:00.001
+1 rows selected.
+
+
+Table VECTOR_TABLE dropped.
+
+Elapsed: 00:00:00.299
+
+
+Table VECTOR_TABLE created.
+
+Elapsed: 00:00:00.016
+
+
+Name Null? Type              
+---- ----- ----------------- 
+ID         NUMBER            
+V          VECTOR(*,*,DENSE)
+
+
+3 rows inserted.
+
+Elapsed: 00:00:00.092
+
+
+ID V                                                                 
+-- ----------------------------------------------------------------- 
+ 1 [5.23799992E+000,-2.70000005E+000,7.9323802E+000,8.47200012E+000] 
+ 2 [-8.33399963E+000,4.82000008E+001,7.42299986E+000,3.6730001E+000] 
+ 3 [0,1.0E+000,0,1.0E+000,0,1.0E+000,0]                              
+
+
+Elapsed: 00:00:00.029
+3 rows selected.
+
+
+1 row updated.
+
+Elapsed: 00:00:00.008
+
+
+ID V                                                                 
+-- ----------------------------------------------------------------- 
+ 1 [0]                                                               
+ 2 [-8.33399963E+000,4.82000008E+001,7.42299986E+000,3.6730001E+000] 
+ 3 [0,1.0E+000,0,1.0E+000,0,1.0E+000,0]                              
+
+
+Elapsed: 00:00:00.003
+3 rows selected.
+
+
+1 row deleted.
+
+Elapsed: 00:00:00.005
+
+
+ID V                                                                 
+-- ----------------------------------------------------------------- 
+ 1 [0]                                                               
+ 2 [-8.33399963E+000,4.82000008E+001,7.42299986E+000,3.6730001E+000] 
+
+
+Elapsed: 00:00:00.002
+2 rows selected.
+
+
+Table VECTOR_TABLE_2 dropped.
+
+Elapsed: 00:00:00.039
+
+
+Table VECTOR_TABLE_2 created.
+
+Elapsed: 00:00:00.015
+
+
+3 rows inserted.
+
+Elapsed: 00:00:00.099
+
+
+ID V                            
+-- ---------------------------- 
+ 1 [0,1.0E+000,2.0E+000]        
+ 2 [3.0E+000,4.0E+000,5.0E+000] 
+ 3 [6.0E+000,7.0E+000,8.0E+000] 
+
+
+Elapsed: 00:00:00.019
+3 rows selected.
+
+
+ORA-51803: Vector dimension count must match the dimension count specified in the column definition (actual: 4, required: 3).
+
+https://docs.oracle.com/error-help/db/ora-51803/
+Error at Line: 7 Column: 0
+
+
+Table VECTOR_TABLE_3 created.
+
+Elapsed: 00:00:00.069
+
+
+Name Null? Type                    
+---- ----- ----------------------- 
+V1         VECTOR(3,FLOAT64,DENSE) 
+V2         VECTOR(3072,*,DENSE)    
+V3         VECTOR(*,FLOAT32,DENSE) 
+V4         VECTOR(*,*,DENSE)       
+V5         VECTOR(*,*,DENSE)
+
+
+SYSDATE                
+---------------------- 
+10/17/2025, 2:32:25 PM 
+
+
+Elapsed: 00:00:00.001
+1 rows selected.
+
+
+BANNER                                                                                               BANNER_FULL                                                                                                                BANNER_LEGACY                                                                                        CON_ID 
+---------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------- ------ 
+Oracle Database 23ai Enterprise Edition Release 23.0.0.0.0 - for Oracle Cloud and Engineered Systems Oracle Database 23ai Enterprise Edition Release 23.0.0.0.0 - for Oracle Cloud and Engineered Systems
+Version 23.10.0.25.10 Oracle Database 23ai Enterprise Edition Release 23.0.0.0.0 - for Oracle Cloud and Engineered Systems      0 
+
+
+Elapsed: 00:00:00.007
+1 rows selected.
+
+
+Table MOVIES created.
+
+Elapsed: 00:00:00.070
+
+
+Table CUSTOMERS created.
+
+Elapsed: 00:00:00.034
+
+
+Table RATINGS created.
+
+Elapsed: 00:00:00.021
+
+
+10 rows inserted.
+
+Elapsed: 00:00:00.099
+
+
+5 rows inserted.
+
+Elapsed: 00:00:00.027
+
+
+5 rows inserted.
+
+Elapsed: 00:00:00.043
+
+
+1 row updated.
+
+Elapsed: 00:00:00.007
+
+
+1 row updated.
+
+Elapsed: 00:00:00.006
+
+
+1 row updated.
+
+Elapsed: 00:00:00.004
+
+
+1 row updated.
+
+Elapsed: 00:00:00.005
+
+
+1 row updated.
+
+Elapsed: 00:00:00.008
+
+
+1 row updated.
+
+Elapsed: 00:00:00.006
+
+
+1 row updated.
+
+Elapsed: 00:00:00.004
+
+
+1 row updated.
+
+Elapsed: 00:00:00.005
+
+
+1 row updated.
+
+Elapsed: 00:00:00.005
+
+
+1 row updated.
+
+Elapsed: 00:00:00.004
+
+
+Table CUSTOMER_QUESTIONS created.
+
+Elapsed: 00:00:00.087
+
+
+4 rows inserted.
+
+Elapsed: 00:00:00.100
+
+
+TITLE                  GENRE    DIRECTOR              M_DESCRIPTION                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+---------------------- -------- --------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+Shaun of the Dead      Comedy   Edgar Wright          Shaun of the Dead is a British horror-comedy that blends elements of zombie movies with sharp, witty humor. The story follows Shaun, a man stuck in a mundane life, as he attempts to win back his girlfriend, reconcile with his mother, and deal with the sudden outbreak of a zombie apocalypse. The film is known for its clever dialogue, memorable characters, and a perfect balance of horror and comedy. It offers a fresh take on the zombie genre while exploring themes of responsibility, friendship, and personal growth in the most unexpected of circumstances.                                                                                                                
+In Bruges              Comedy   Martin McDonagh       In Bruges is a darkly comedic crime drama set in the picturesque medieval town of Bruges, Belgium. The story follows two hitmen, Ray and Ken, who are sent to Bruges by their ruthless boss after a job goes wrong. As they await further instructions, the two men have very different reactions to the town: Ken enjoys the sights, while Ray finds it unbearable. The film is a mix of humor, tragedy, and moral dilemmas, with sharp dialogue and strong performances, particularly from Colin Farrell as the guilt-ridden Ray. The movie explores themes of redemption, guilt, and the consequences of violence, all set against the backdrop of one of Europes most beautiful cities.   
+Anchorman              Comedy   Adam McKay            Anchorman: The Legend of Ron Burgundy is a satirical comedy that takes a humorous look at the male-dominated world of 1970s television news. The film follows Ron Burgundy, a charismatic yet chauvinistic anchorman, and his team of equally clueless colleagues as they face off against a new female co-anchor, Veronica Corningstone. The movie is a wild ride of absurd humor, over-the-top characters, and sharp social commentary on gender roles and media culture. With its memorable quotes and hilarious performances, particularly from Will Ferrell as Ron Burgundy, Anchorman has become a cult classic that continues to entertain audiences.                                  
+No Country for Old Men Thriller Joel Coen, Ethan Coen No Country for Old Men is a gripping crime thriller that explores the violent consequences of a drug deal gone wrong in the desolate landscapes of West Texas. The story follows Llewelyn Moss, who stumbles upon a suitcase filled with cash at the scene of a botched drug deal, and soon finds himself pursued by the relentless and cold-blooded hitman Anton Chigurh. The film is a tense and atmospheric exploration of fate, morality, and the changing nature of the American West, with powerful performances and a hauntingly minimalist score. Directed by the Coen Brothers, No Country for Old Men is a modern masterpiece that challenges traditional notions of good and evil. 
+
+
+Elapsed: 00:00:00.026
+4 rows selected.
+
+
+TITLE                    GENRE  DIRECTOR     M_DESCRIPTION                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+------------------------ ------ ------------ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+Superbad                 Comedy Greg Mottola Superbad is a hilarious coming-of-age film that follows two inseparable high school friends, Seth and Evan, during their last days of high school. The duo are invited to a party by a girl they like, and they decide that this party is their last chance to lose their virginity before heading off to college. The movie tracks their chaotic journey to secure alcohol for the party, leading to a series of absurd and comedic misadventures. With a mix of crude humor and heartfelt moments, Superbad captures the anxiety, excitement, and sheer awkwardness of adolescence, backed by strong performances from its young cast.                                                                              
+The Grand Budapest Hotel Comedy Wes Anderson Set in a famous European hotel between the wars, The Grand Budapest Hotel is the story of a legendary concierge, M. Gustave, and his friendship with a young employee named Zero. The film weaves a whimsical narrative full of adventure, comedy, and poignant moments, all within the lush, stylized world characteristic of Wes Andersons work. The plot revolves around the theft of a priceless painting, a family inheritance battle, and the rise of fascism, portrayed with a blend of humor and melancholy. The films visual design is as intricate as its narrative, with meticulous attention to detail in its sets, costumes, and cinematography, making it a feast for the eyes as much as for the mind. 
+Shaun of the Dead        Comedy Edgar Wright Shaun of the Dead is a British horror-comedy that blends elements of zombie movies with sharp, witty humor. The story follows Shaun, a man stuck in a mundane life, as he attempts to win back his girlfriend, reconcile with his mother, and deal with the sudden outbreak of a zombie apocalypse. The film is known for its clever dialogue, memorable characters, and a perfect balance of horror and comedy. It offers a fresh take on the zombie genre while exploring themes of responsibility, friendship, and personal growth in the most unexpected of circumstances.                                                                                                                                        
+Mean Girls               Comedy Mark Waters  Mean Girls is a teen comedy that satirizes the social hierarchy of high school life. The film follows Cady Heron, a teenager who moves to the United States after being homeschooled in Africa. She soon finds herself navigating the complex social dynamics of her new high school, where she becomes entangled with a popular clique known as The Plastics. The movie is both a hilarious and insightful look at the pressures and pitfalls of adolescence, with memorable characters and sharp, quotable dialogue. Mean Girls has become a cultural touchstone, beloved for its humor and its accurate portrayal of high school life.                                                                             
+
+
+Elapsed: 00:00:00.031
+4 rows selected.
+
+
+Table VECTOR_TABLE dropped.
+
+Elapsed: 00:00:00.048
+
+
+Table VECTOR_TABLE_2 dropped.
+
+Elapsed: 00:00:00.031
+
+
+Table MOVIES dropped.
+
+Elapsed: 00:00:00.097
+
+
+Table CUSTOMERS dropped.
+
+Elapsed: 00:00:00.049
+
+
+Table RATINGS dropped.
+
+Elapsed: 00:00:00.058
