@@ -1,0 +1,139 @@
+Table PRODUCTS dropped.
+
+Elapsed: 00:00:00.005
+
+
+Table PRODUCTS created.
+
+Elapsed: 00:00:00.050
+
+
+5 rows inserted.
+
+Elapsed: 00:00:00.023
+
+
+PRODUCT_ID PRODUCT_NAME          PRICE 
+---------- ------------------- ------- 
+         1 Gaming Laptop       1299.99 
+         2 Wireless Mouse        49.99 
+         3 Mechanical Keyboard  129.99 
+         4 Gaming Monitor       399.99 
+         5 Gaming Headset        89.99 
+
+
+Elapsed: 00:00:00.010
+5 rows selected.
+
+
+Product: Gaming Laptop, Old Price: $1299.99, New Price: $1429.99, Difference: $130
+Product: Wireless Mouse, Old Price: $49.99, New Price: $54.99, Difference: $5
+Product: Mechanical Keyboard, Old Price: $129.99, New Price: $142.99, Difference: $13
+Product: Gaming Monitor, Old Price: $399.99, New Price: $439.99, Difference: $40
+Product: Gaming Headset, Old Price: $89.99, New Price: $98.99, Difference: $9
+
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.009
+
+
+Deleted Product: Wireless Mouse, Price: $54.99, Last Updated: 2025-10-17
+Deleted Product: Gaming Headset, Price: $98.99, Last Updated: 2025-10-17
+Total products deleted: 2
+
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.010
+
+
+Inserted Product - ID: 6, Name: Gaming Chair, Price: $299.99, Updated: 2025-10-17
+
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.005
+
+
+Table PRODUCTS dropped.
+
+Elapsed: 00:00:00.037
+
+
+MLE module BOOKSTORE_MODULE compiled
+
+No errors.
+Elapsed: 00:00:00.297
+
+
+Function GET_FINAL_PRICE compiled
+
+No errors.
+Elapsed: 00:00:00.250
+
+
+FINAL_PRICE 
+----------- 
+         16 
+
+
+Elapsed: 00:00:00.103
+1 rows selected.
+
+
+MLE env BOOKSTORE_ENV created.
+
+Elapsed: 00:00:00.054
+
+
+MLE module SHIPPING_MODULE compiled
+
+No errors.
+Elapsed: 00:00:00.017
+
+
+Function GET_TOTAL_WITH_SHIPPING compiled
+
+No errors.
+Elapsed: 00:00:00.017
+
+
+TOTAL_COST 
+---------- 
+        21 
+
+
+Book price after discount: $16
+Shipping cost: $5
+
+
+Elapsed: 00:00:00.023
+1 rows selected.
+
+
+JavaScript Guide: $25.49 (15% off)
+Database Basics: $22.49 (10% off)
+
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.098
+
+
+Testing order calculation...
+Debug: Starting calculation for order...
+Debug: Input values:
+  - Book price: $19.99
+  - Quantity: 3
+  - Discount: 15%
+Debug: Subtotal (19.99 × 3): $59.97
+Debug: Discount calculation:
+  - 15% of $59.97
+  - Discount amount: $8.9955
+Debug: Final price: $50.9745
+
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.012
