@@ -1,6 +1,15 @@
---Exploring AI Vector Search
---https://www.oracle.com/database/ai-vector-search/
---https://www.oracle.com/database/ai-vector-search/features/
+/* ===============================================================
+   Author:      Ollear Mena 
+   Company:     ELITEDATA S.L.  
+   Script:      Exploring_AI_Vector_Search.sql  
+   Lab Title:   Exploring AI Vector Search in Oracle Database 23ai  
+   Description: Demonstrates how to create and query VECTOR columns
+                using Oracle AI Vector Search capabilities.  
+   References:  https://www.oracle.com/database/ai-vector-search/
+                https://www.oracle.com/database/ai-vector-search/features/
+   Version:     1.0  
+   Date:        SYSDATE  
+   =============================================================== */
 
 select sysdate;
 --Creating a vector table
@@ -274,4 +283,5 @@ DROP TABLE if exists vector_table CASCADE CONSTRAINTS;
 DROP TABLE if exists vector_table_2 CASCADE CONSTRAINTS;
 DROP TABLE if exists movies CASCADE CONSTRAINTS;
 DROP TABLE if exists customers CASCADE CONSTRAINTS;
+
 DROP TABLE if exists ratings CASCADE CONSTRAINTS;
