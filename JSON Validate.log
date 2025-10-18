@@ -1,0 +1,151 @@
+Table VEHICLES dropped.
+
+Elapsed: 00:00:00.004
+
+
+Table VEHICLES created.
+
+Elapsed: 00:00:00.029
+
+
+2 rows inserted.
+
+Elapsed: 00:00:00.059
+
+
+ORA-40875: JSON schema validation error
+
+https://docs.oracle.com/error-help/db/ora-40875/
+Error at Line: 29 Column: 0
+
+
+ORA-40875: JSON schema validation error
+
+https://docs.oracle.com/error-help/db/ora-40875/
+Error at Line: 32 Column: 0
+
+
+Table VEHICLES dropped.
+
+Elapsed: 00:00:00.057
+
+
+Table VEHICLES created.
+
+Elapsed: 00:00:00.023
+
+
+ORA-40441: JSON syntax error
+JZN-00074: member name not enclosed in double quotation marks (line 1, position 2)
+
+https://docs.oracle.com/error-help/db/ora-40441/
+Error at Line: 53 Column: 0
+
+
+Table VEHICLES altered.
+
+Elapsed: 00:00:00.016
+
+
+Table VEHICLES altered.
+
+Elapsed: 00:00:00.019
+
+
+ORA-40875: JSON schema validation error
+
+https://docs.oracle.com/error-help/db/ora-40875/
+Error at Line: 74 Column: 0
+
+
+Table VEHICLES dropped.
+
+Elapsed: 00:00:00.050
+
+
+Table VEHICLES created.
+
+Elapsed: 00:00:00.022
+
+
+4 rows inserted.
+
+Elapsed: 00:00:00.038
+
+
+VEHICLE_ID VEHICLE_INFO                                   
+---------- ---------------------------------------------- 
+         1 {"make":"Nissan","model":"Altima","year":2021} 
+         3 {"make":"Dodge","model":"Charger","year":2023} 
+
+
+Elapsed: 00:00:00.008
+2 rows selected.
+
+
+Table VEHICLES dropped.
+
+Elapsed: 00:00:00.048
+
+
+Table VEHICLES dropped.
+
+Elapsed: 00:00:00.005
+
+
+Table VEHICLES created.
+
+Elapsed: 00:00:00.026
+
+
+ORA-40441: JSON syntax error
+JZN-00074: member name not enclosed in double quotation marks (line 1, position 2)
+
+https://docs.oracle.com/error-help/db/ora-40441/
+Error at Line: 8 Column: 0
+
+
+Table VEHICLES altered.
+
+Elapsed: 00:00:00.025
+
+
+Table VEHICLES altered.
+
+Elapsed: 00:00:00.023
+
+
+ORA-40875: JSON schema validation error
+
+https://docs.oracle.com/error-help/db/ora-40875/
+Error at Line: 29 Column: 0
+
+
+Table VEHICLES dropped.
+
+Elapsed: 00:00:00.064
+
+
+Table VEHICLES created.
+
+Elapsed: 00:00:00.032
+
+
+4 rows inserted.
+
+Elapsed: 00:00:00.041
+
+
+VEHICLE_ID VEHICLE_INFO                                   
+---------- ---------------------------------------------- 
+         1 {"make":"Nissan","model":"Altima","year":2021} 
+         3 {"make":"Dodge","model":"Charger","year":2023} 
+
+
+Elapsed: 00:00:00.007
+2 rows selected.
+
+
+Table VEHICLES dropped.
+
+Elapsed: 00:00:00.051
