@@ -1,6 +1,6 @@
 /* ===============================================================
-   Author:      Ollear Mena
-   Company:     ELITEDATA 
+   Reviewer: Ollear Mena
+   Company: ELITEDATA S.L. 
    Script:      shrink_tablespace.sql  
    Lab Title:   Tablespace Shrink and Space Optimization in Oracle Database 26ai  
    Description: Demonstrates how to analyze and shrink a tablespace 
@@ -69,3 +69,4 @@ execute dbms_space.SHRINK_TABLESPACE('DATA');
 
 
 execute dbms_space.SHRINK_TABLESPACE('DATA', SHRINK_MODE=>DBMS_SPACE.TS_MODE_ANALYZE);
+
