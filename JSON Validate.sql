@@ -1,3 +1,20 @@
+/* ===============================================================
+   Author:      OLLEAR MENA 
+   Company:     ELITEDATA  
+   Script:      JSON Validate.sql  
+   Lab Title:   JSON Validation and Schema Enforcement — Oracle Database 26ai  
+   Description: Demonstrates how to validate JSON documents using JSON 
+                schema constraints and built-in Oracle 26ai validation functions.  
+                Includes examples with valid and invalid JSON data, 
+                handling ORA-40875 and ORA-40441 errors.  
+   References:  https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/
+   Version:     1.0  
+   Date:        SYSDATE  
+   =============================================================== */
+
+
+
+
 DROP TABLE IF EXISTS vehicles cascade constraints;
 
 CREATE TABLE vehicles (
@@ -96,5 +113,6 @@ WHERE  vehicle_info IS JSON VALIDATE '{
                             "maximum" : 2024}},
 "required"   : ["make", "model", "year"]
 }';
+
 
 DROP TABLE IF EXISTS vehicles cascade constraints;
