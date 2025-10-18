@@ -1,0 +1,68 @@
+Table GENRES dropped.
+
+Elapsed: 00:00:00.005
+
+
+Table MOVIES dropped.
+
+Elapsed: 00:00:00.003
+
+
+Table GENRES created.
+
+Elapsed: 00:00:00.027
+
+
+Table MOVIES created.
+
+Elapsed: 00:00:00.019
+
+
+4 rows inserted.
+
+Elapsed: 00:00:00.025
+
+
+8 rows inserted.
+
+Elapsed: 00:00:00.057
+
+
+MOVIE_ID TITLE                    GENRE_ID RATING 
+-------- ------------------------ -------- ------ 
+       1 The Silence of the Lambs        1    8.6 
+       5 Seven                           1    8.6 
+
+
+Elapsed: 00:00:00.016
+2 rows selected.
+
+
+2 rows updated.
+
+Elapsed: 00:00:00.009
+
+
+MOVIE_ID TITLE                     GENRE_ID RATING 
+-------- ------------------------- -------- ------ 
+       2 Psycho                           2    8.5 
+       6 A Nightmare on Elm Street        2    7.5 
+
+
+Elapsed: 00:00:00.008
+2 rows selected.
+
+
+2 rows deleted.
+
+Elapsed: 00:00:00.007
+
+
+Table GENRES dropped.
+
+Elapsed: 00:00:00.053
+
+
+Table MOVIES dropped.
+
+Elapsed: 00:00:00.042
