@@ -1,0 +1,113 @@
+Table MOVIES dropped.
+
+Elapsed: 00:00:00.006
+
+
+Table MOVIES created.
+
+Elapsed: 00:00:00.034
+
+
+9 rows inserted.
+
+Elapsed: 00:00:00.035
+
+
+MOVIE_ID TITLE                   RECOMMENDED 
+-------- ----------------------- ----------- 
+       1 The Matrix              true        
+       2 Jaws                    false       
+       3 Casablanca              true        
+       4 Plan 9 From Outer Space false       
+       5 Inception               true        
+       6 Sharknado               false       
+       7 Interstellar            true        
+       8 The Room                false       
+       9 Sicario                 null        
+
+
+Elapsed: 00:00:00.009
+9 rows selected.
+
+
+MOVIE_ID TITLE        
+-------- ------------ 
+       1 The Matrix   
+       3 Casablanca   
+       5 Inception    
+       7 Interstellar 
+
+
+Elapsed: 00:00:00.008
+4 rows selected.
+
+
+MOVIE_ID TITLE        
+-------- ------------ 
+       1 The Matrix   
+       3 Casablanca   
+       5 Inception    
+       7 Interstellar 
+
+
+Elapsed: 00:00:00.005
+4 rows selected.
+
+
+MOVIE_ID TITLE        
+-------- ------------ 
+       1 The Matrix   
+       3 Casablanca   
+       5 Inception    
+       7 Interstellar 
+
+
+Elapsed: 00:00:00.026
+4 rows selected.
+
+
+TITLE RECOMMENDED 
+----- ----------- 
+Jaws  false       
+
+
+Elapsed: 00:00:00.006
+1 rows selected.
+
+
+1 row updated.
+
+Elapsed: 00:00:00.004
+
+
+TITLE RECOMMENDED 
+----- ----------- 
+Jaws  true        
+
+
+Elapsed: 00:00:00.002
+1 rows selected.
+
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.008
+
+
+MOVIE_ID TITLE        
+-------- ------------ 
+      10 Surfs Up     
+       1 The Matrix   
+       2 Jaws         
+       3 Casablanca   
+       5 Inception    
+       7 Interstellar 
+
+
+Elapsed: 00:00:00.002
+6 rows selected.
+
+
+Table MOVIES dropped.
+
+Elapsed: 00:00:00.046
