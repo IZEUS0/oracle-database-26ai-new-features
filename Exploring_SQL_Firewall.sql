@@ -1,3 +1,17 @@
+/* ===============================================================
+Reviewer: Ollear Mena 
+   Company: ELITEDATA S.L.  
+   Script:      Exploring_SQL_Firewall.sql  
+   Lab Title:   Exploring SQL Firewall — Oracle Database 26ai  
+   Description: Demonstrates the SQL Firewall feature in Oracle Database 26ai, 
+                including enabling protection, learning mode, policy creation, 
+                and enforcement to block unauthorized SQL statements.  
+   References:  https://docs.oracle.com/en/database/oracle/oracle-database/26/dbseg/
+   Version:     1.0  
+   Date:        SYSDATE  
+   =============================================================== */
+
+
 --Enabling SQL Firewall
 -- Create USER SQL
 CREATE USER TEST IDENTIFIED BY Oracledb_4U#;
@@ -151,6 +165,7 @@ END;
 
 DROP USER TEST CASCADE;
 DROP USER DB23AI CASCADE;
+
 
 
 
