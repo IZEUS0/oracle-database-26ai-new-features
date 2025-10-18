@@ -1,6 +1,6 @@
 /* ===============================================================
-   Author:      OLLEAR MENA 
-   Company:     ELITEDATA  
+ Reviewer: Ollear Mena
+   Company: ELITEDATA S.L.  
    Script:      JSON Validate.sql  
    Lab Title:   JSON Validation and Schema Enforcement — Oracle Database 26ai  
    Description: Demonstrates how to validate JSON documents using JSON 
@@ -116,3 +116,4 @@ WHERE  vehicle_info IS JSON VALIDATE '{
 
 
 DROP TABLE IF EXISTS vehicles cascade constraints;
+
