@@ -1,3 +1,18 @@
+/* ===============================================================
+   Author:      OLLEAR MENA
+   Company:     ELITEDATA  
+   Script:      Direct_Joins_DML.sql  
+   Lab Title:   Direct Joins in DML Statements — Oracle Database 26ai  
+   Description: Demonstrates how to use Direct Joins in INSERT, UPDATE, 
+                and DELETE statements to simplify multi-table operations.  
+                Includes examples combining MOVIES and GENRES tables 
+                with inline join conditions for efficient DML execution.  
+   References:  https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/
+   Version:     1.0  
+   Date:        SYSDATE  
+   =============================================================== */
+
+
 DROP TABLE if exists PRODUCTS CASCADE CONSTRAINT;
 
 -- Create PRODUCTS table
@@ -114,5 +129,6 @@ BEGIN
     );
 END;
 /
+
 
 DROP TABLE if exists PRODUCTS CASCADE CONSTRAINT;
