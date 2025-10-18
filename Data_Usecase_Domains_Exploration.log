@@ -1,0 +1,358 @@
+Domain PRICE dropped.
+
+Elapsed: 00:00:00.016
+
+
+Domain PRICE created.
+
+Elapsed: 00:00:00.015
+
+
+Domain COORDINATES dropped.
+
+Elapsed: 00:00:00.009
+
+
+Domain COORDINATES created.
+
+Elapsed: 00:00:00.006
+
+
+Domain PERSONAL_CONTACT_DOM dropped.
+
+Elapsed: 00:00:00.002
+
+
+Domain BUSINESS_CONTACT_DOM dropped.
+
+Elapsed: 00:00:00.002
+
+
+Domain DEFAULT_CONTACT_DOM dropped.
+
+Elapsed: 00:00:00.002
+
+
+Domain PERSONAL_CONTACT_DOM created.
+
+Elapsed: 00:00:00.007
+
+
+Domain BUSINESS_CONTACT_DOM created.
+
+Elapsed: 00:00:00.007
+
+
+Domain DEFAULT_CONTACT_DOM created.
+
+Elapsed: 00:00:00.013
+
+
+Flexible DOMAIN created.
+
+Elapsed: 00:00:00.015
+
+
+SYSTEM PROVIDED DOMAINS                  
+---------------------------------------- 
+MEAN_D                                   
+MEDIAN_D                                 
+MODE_D                                   
+VARIANCE_D                               
+STANDARD_DEVIATION_D                     
+MEASURE_VALUE_D                          
+MEASURE_TYPE_D                           
+RANK_D                                   
+SCORE_D                                  
+RATING_D                                 
+CURRENCY_CODE_D                          
+CURRENCY_AMOUNT_D                        
+LATITUDE_D                               
+LONGITUDE_D                              
+TIME_ZONE_UTC_OFFSET_D                   
+TIME_ZONE_ABBREVIATION_D                 
+MONTH_ENUM_D                             
+DAY_ENUM_D                               
+DAY_SHORT_D                              
+DAY_D                                    
+MONTH_SHORT_D                            
+MONTH_D                                  
+YEAR_D                                   
+SOCIAL_MEDIA_ID_D                        
+SOCIAL_MEDIA_TYPE_D                      
+MARITAL_STATUS_D                         
+HOUSE_NUMBER_D                           
+STREET_D                                 
+CITY_D                                   
+STATE_D                                  
+PROVINCE_D                               
+COUNTRY_D                                
+COUNTRY_CODE_D                           
+DISTRICT_D                               
+FLOOR_D                                  
+VEHICLE_ID_D                             
+DATE_OF_BIRTH_D                          
+US_SSN_D                                 
+NATIONAL_ID_D                            
+PAYMENT_CARD_ID_D                        
+US_ZIP_D                                 
+ZIP_D                                    
+US_PHONE_D                               
+PHONE_D                                  
+PASSPORT_D                               
+US_PASSPORT_D                            
+US_POSTAL_CODE_D                         
+POSTAL_CODE_D                            
+LICENSE_PLATE_D                          
+US_LICENSE_PLATE_D                       
+US_STATE_D                               
+US_VEHICLE_ID_D                          
+PHONE_NUMBER_D                           
+CREDIT_CARD_NUMBER_D                     
+SSN_D                                    
+POSITIVE_NUMBER_D                        
+NEGATIVE_NUMBER_D                        
+NON_POSITIVE_NUMBER_D                    
+NON_NEGATIVE_NUMBER_D                    
+NON_ZERO_NUMBER_D                        
+COUNT_D                                  
+UNIT_COUNT_D                             
+UNIT_ID_D                                
+UNIT_PRICE_D                             
+MEASURE_D                                
+PERCENT_D                                
+PERCENT_CHANGE_D                         
+RATIO_D                                  
+DURATION_D                               
+PERCENTILE_D                             
+GAUGE_D                                  
+COUNTER_D                                
+HISTOGRAM_NAME_D                         
+HISTOGRAM_SUM_D                          
+HISTOGRAM_COUNT_D                        
+HISTOGRAM_UPPER_INCLUSIVE_BOUND_D        
+HISTOGRAM_UPPER_INCLUSIVE_BOUND_STRING_D 
+BINARY_D                                 
+OCTAL_D                                  
+HEXADECIMAL_D                            
+EMAIL_D                                  
+MAC_ADDRESS_D                            
+IPV4_ADDRESS_D                           
+IPV6_ADDRESS_D                           
+IP_ADDRESS_D                             
+SUBNET_MASK_D                            
+SHA1_D                                   
+SHA256_D                                 
+SHA512_D                                 
+CIDR_D                                   
+MIME_TYPE_D                              
+HASH_VALUE_D                             
+HASH_FUNCTION_D                          
+ENCRYPTION_VALUE_D                       
+ENCRYPTION_FUNCTION_D                    
+FILE_EXTENSION_D                         
+FILE_SIZE_D                              
+LAST_MODIFIED_ON_D                       
+LAST_UPDATED_ON_D                        
+LAST_OPENED_ON_D                         
+CREATED_ON_D                             
+ID_NUMBER_D                              
+ID_STRING_D                              
+SHORT_NAME_D                             
+DESCRIPTION_D                            
+UUID4_D                                  
+HOSTNAME_D                               
+WEBSITE_D                                
+URI_D                                    
+
+
+Elapsed: 00:00:00.139
+109 rows selected.
+
+
+Table PRODUCTS dropped.
+
+Elapsed: 00:00:00.006
+
+
+Table PRODUCTS created.
+
+Elapsed: 00:00:00.075
+
+
+Table LOCATIONS dropped.
+
+Elapsed: 00:00:00.005
+
+
+Table LOCATIONS created.
+
+Elapsed: 00:00:00.021
+
+
+Table CONTACTS dropped.
+
+Elapsed: 00:00:00.004
+
+
+Table CONTACTS created.
+
+Elapsed: 00:00:00.030
+
+
+1 row inserted.
+
+Elapsed: 00:00:00.018
+
+
+ORA-11534: check constraint (ADMIN.SYS_C0029841) involving column PRICE due to domain constraint ADMIN.PRICE of domain ADMIN.PRICE violated
+
+https://docs.oracle.com/error-help/db/ora-11534/
+Error at Line: 8 Column: 0
+
+
+ORA-11534: check constraint (ADMIN.SYS_C0029842) involving columns LATITUDE, LONGITUDE due to domain constraint ADMIN.COORDINATES of domain ADMIN.COORDINATES violated
+
+https://docs.oracle.com/error-help/db/ora-11534/
+Error at Line: 8 Column: 0
+
+
+1 row inserted.
+
+Elapsed: 00:00:00.003
+
+
+1 row inserted.
+
+Elapsed: 00:00:00.013
+
+
+Domain ORDER_STATUS_DOMAIN dropped.
+
+Elapsed: 00:00:00.002
+
+
+Domain ORDER_STATUS_DOMAIN created.
+
+Elapsed: 00:00:00.012
+
+
+ENUM_NAME  ENUM_VALUE 
+---------- ---------- 
+PENDING             1 
+PROCESSING          2 
+SHIPPED             3 
+DELIVERED           4 
+
+
+Elapsed: 00:00:00.009
+4 rows selected.
+
+
+Domain ORDER_STATUS_DOMAIN dropped.
+
+Elapsed: 00:00:00.010
+
+
+Domain ORDER_STATUS_DOMAIN created.
+
+Elapsed: 00:00:00.009
+
+
+ENUM_NAME  ENUM_VALUE 
+---------- ---------- 
+PENDING             5 
+PROCESSING          6 
+SHIPPED             7 
+DELIVERED           8 
+
+
+Elapsed: 00:00:00.007
+4 rows selected.
+
+
+Table ORDERS dropped.
+
+Elapsed: 00:00:00.005
+
+
+Table ORDERS created.
+
+Elapsed: 00:00:00.030
+
+
+4 rows inserted.
+
+Elapsed: 00:00:00.040
+
+
+ID CUSTOMER PRODUCT    STATUS     
+-- -------- ---------- ---------- 
+ 1 Alice    Laptop     PENDING    
+ 2 Bob      Smartphone PROCESSING 
+ 3 Charlie  Headphones SHIPPED    
+ 4 Diana    Monitor    DELIVERED  
+
+
+Elapsed: 00:00:00.016
+4 rows selected.
+
+
+NAME                 DOMAIN_OWNER DOMAIN_NAME          CONSTRAINT_TYPE SEARCH_CONDITION                                                                                              STATUS  DEFERRABLE     DEFERRED  VALIDATED     GENERATED      BAD  RELY INVALID ORIGIN_CON_ID 
+-------------------- ------------ -------------------- --------------- ------------------------------------------------------------------------------------------------------------- ------- -------------- --------- ------------- -------------- ---- ---- ------- ------------- 
+COORDINATES          ADMIN        COORDINATES          C               latitude between -90 and 90 and longitude between -180 and 180                                                ENABLED NOT DEFERRABLE IMMEDIATE VALIDATED     USER NAME      null null null               90 
+BUSINESS_CONTACT_DOM ADMIN        BUSINESS_CONTACT_DOM C               first_name is not null and 
+                                       phone is not null                          ENABLED NOT DEFERRABLE IMMEDIATE VALIDATED     USER NAME      null null null               90 
+PRICE                ADMIN        PRICE                C               value > 0                                                                                                     ENABLED NOT DEFERRABLE IMMEDIATE VALIDATED     USER NAME      null null null               90 
+PERSONAL_CONTACT_DOM ADMIN        PERSONAL_CONTACT_DOM C               first_name is not null and 
+                                       phone is not null                          ENABLED NOT DEFERRABLE IMMEDIATE VALIDATED     USER NAME      null null null               90 
+DEFAULT_CONTACT_DOM  ADMIN        DEFAULT_CONTACT_DOM  C               first_name is not null and 
+                                       phone is not null                          ENABLED NOT DEFERRABLE IMMEDIATE VALIDATED     USER NAME      null null null               90 
+SYS_DOMAIN_C0058     ADMIN        CONTACT_FLEX_DOM     C               ("CONTACT_TYPE"='personal' OR "CONTACT_TYPE"='business' OR "FIRST_NAME" IS NOT NULL AND "PHONE" IS NOT NULL)  ENABLED NOT DEFERRABLE IMMEDIATE NOT VALIDATED USER NAME      null null null               90 
+SYS_DOMAIN_C0059     ADMIN        CONTACT_FLEX_DOM     C               ("CONTACT_TYPE"='personal' OR "CONTACT_TYPE"<>'business' OR "FIRST_NAME" IS NOT NULL AND "PHONE" IS NOT NULL) ENABLED NOT DEFERRABLE IMMEDIATE NOT VALIDATED USER NAME      null null null               90 
+SYS_DOMAIN_C0060     ADMIN        CONTACT_FLEX_DOM     C               ("CONTACT_TYPE"<>'personal' OR "FIRST_NAME" IS NOT NULL AND "PHONE" IS NOT NULL)                              ENABLED NOT DEFERRABLE IMMEDIATE NOT VALIDATED USER NAME      null null null               90 
+SYS_DOMAIN_C0062     ADMIN        ORDER_STATUS_DOMAIN  C               "ORDER_STATUS_DOMAIN" IN (5,6,7,8)                                                                            ENABLED NOT DEFERRABLE IMMEDIATE VALIDATED     GENERATED NAME null null null               90 
+
+
+Elapsed: 00:00:00.036
+9 rows selected.
+
+
+Table PRODUCTS dropped.
+
+Elapsed: 00:00:00.050
+
+
+Table LOCATIONS dropped.
+
+Elapsed: 00:00:00.045
+
+
+Table CONTACTS dropped.
+
+Elapsed: 00:00:00.045
+
+
+Table ORDERS dropped.
+
+Elapsed: 00:00:00.063
+
+
+Domain PERSONAL_CONTACT_DOM dropped.
+
+Elapsed: 00:00:00.012
+
+
+Domain BUSINESS_CONTACT_DOM dropped.
+
+Elapsed: 00:00:00.007
+
+
+Domain DEFAULT_CONTACT_DOM dropped.
+
+Elapsed: 00:00:00.007
+
+
+Domain ORDER_STATUS_DOMAIN dropped.
+
+Elapsed: 00:00:00.008
