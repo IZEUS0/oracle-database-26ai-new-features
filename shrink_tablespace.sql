@@ -1,3 +1,18 @@
+/* ===============================================================
+   Author:      Ollear Mena
+   Company:     ELITEDATA 
+   Script:      shrink_tablespace.sql  
+   Lab Title:   Tablespace Shrink and Space Optimization in Oracle Database 26ai  
+   Description: Demonstrates how to analyze and shrink a tablespace 
+                to reclaim unused space and optimize storage in Oracle 26ai.  
+                Includes pre- and post-analysis of tablespace size, 
+                execution of shrink procedures, and reporting of results.  
+   References:  https://docs.oracle.com/en/database/oracle/oracle-database/23/admin/
+   Version:     1.0  
+   Date:        SYSDATE  
+   =============================================================== */
+
+
 --Understanding the need for tablespace shrinkage
 SELECT tablespace_name,
     ROUND(SUM(bytes) / 1024 / 1024 / 1024, 2) AS "Size_GB"
@@ -51,5 +66,6 @@ GROUP BY tablespace_name;
 execute dbms_space.SHRINK_TABLESPACE('DATA', SHRINK_MODE=>DBMS_SPACE.TS_MODE_ANALYZE);
 
 execute dbms_space.SHRINK_TABLESPACE('DATA');
+
 
 execute dbms_space.SHRINK_TABLESPACE('DATA', SHRINK_MODE=>DBMS_SPACE.TS_MODE_ANALYZE);
