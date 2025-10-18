@@ -1,6 +1,6 @@
 /* ===============================================================
-   Author:      OLLEAR MENA
-   Company:     ELITEDATA  
+ Reviewer: Ollear Mena
+   Company: ELITEDATA S.L. 
    Script:      Direct_Joins_DML.sql  
    Lab Title:   Direct Joins in DML Statements — Oracle Database 26ai  
    Description: Demonstrates how to use Direct Joins in INSERT, UPDATE, 
@@ -132,3 +132,4 @@ END;
 
 
 DROP TABLE if exists PRODUCTS CASCADE CONSTRAINT;
+
