@@ -1,0 +1,84 @@
+TABLESPACE_NAME SIZE_GB 
+--------------- ------- 
+DATA                1.1 
+
+
+Elapsed: 00:00:00.036
+1 rows selected.
+
+
+Table MY_TABLE dropped.
+
+Elapsed: 00:00:00.006
+
+
+Table MY_TABLE created.
+
+Elapsed: 00:00:00.021
+
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:40.749
+
+
+TABLESPACE_NAME SIZE_GB 
+--------------- ------- 
+DATA                1.1 
+
+
+Elapsed: 00:00:00.012
+1 rows selected.
+
+
+Table MY_TABLE dropped.
+
+Elapsed: 00:00:00.097
+
+
+TABLESPACE_NAME SIZE_GB 
+--------------- ------- 
+DATA                1.1 
+
+
+Elapsed: 00:00:00.028
+1 rows selected.
+
+
+-------------------ANALYZE RESULT-------------------
+Total Movable Objects: 0
+Total Movable Size(GB): 0
+Original Datafile Size(GB): 1.1
+Suggested Target Size(GB): .36
+Process Time: +00 00:00:00.718433
+
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:03.744
+
+
+-------------------SHRINK RESULT-------------------
+Total Moved Objects: 0
+Total Moved Size(GB): 0
+Original Datafile Size(GB): 1.1
+New Datafile Size(GB): .23
+Process Time: +00 00:00:11.744108
+
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:12.051
+
+
+-------------------ANALYZE RESULT-------------------
+Total Movable Objects: 0
+Total Movable Size(GB): 0
+Original Datafile Size(GB): .23
+Suggested Target Size(GB): .23
+Process Time: +00 00:00:00.090794
+
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.626
