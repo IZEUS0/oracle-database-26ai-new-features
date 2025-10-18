@@ -1,3 +1,19 @@
+/* ===============================================================
+   Reviewer: Ollear Mena
+   Company: ELITEDATA S.L.  
+   Script:      JavaScript Stored Procedures.sql  
+   Lab Title:   JavaScript Stored Procedures in Oracle Database 26ai  
+   Description: Demonstrates how to create, execute, and manage 
+                JavaScript-based stored procedures within Oracle Database 26ai 
+                using the integrated JavaScript runtime engine.  
+                Includes examples for function creation, invocation, 
+                and parameter handling.  
+   References:  https://docs.oracle.com/en/database/oracle/oracle-database/26/javascript/
+   Version:     1.0  
+   Date:        SYSDATE  
+   =============================================================== */
+
+
 create or replace mle module bookstore_module 
 language javascript as
 /**
@@ -139,4 +155,5 @@ begin
 
     dbms_mle.drop_context(l_ctx);
 end;
+
 /
