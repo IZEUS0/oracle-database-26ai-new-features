@@ -1,4 +1,5 @@
 🚀 Oracle AI Database 26ai — Feature Review Scripts
+
 Hands-on repository with all Oracle Labs scripts tested and reviewed.
 
 💾 Features included:
@@ -26,5 +27,3 @@ JSON Relational Duality Views – work with data as JSON and relational simultan
 SQL Analysis & Optimization – execution plan insights and performance tuning.
 
 Tablespace Shrink – reclaim and optimize tablespace storage efficiently.
-
-#Oracle #Database #AI #SQL #Innovation #DataEngineering
