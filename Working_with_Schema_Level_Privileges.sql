@@ -1,6 +1,6 @@
 /* ===============================================================
-   Author:      Ollear Mena 
-   Company:     ELITEDATA 
+   Reviewer: Ollear Mena
+   Company: ELITEDATA S.L. 
    Script:      Working_with_Schema_Level_Privileges.sql  
    Lab Title:   Working with Schema-Level Privileges in Oracle Database 26ai  
    Description: Demonstrates how to grant, revoke, and manage schema-level 
@@ -121,6 +121,7 @@ REVOKE DB_DEVELOPER_ROLE FROM OLLEAR;
 SELECT GRANTED_ROLE FROM DBA_ROLE_PRIVS WHERE GRANTEE='OLLEAR';
 
 drop user IF EXISTS ollear CASCADE;
+
 
 
 
