@@ -1,6 +1,6 @@
 /* ===============================================================
-   Author:      OLLEAR MENA
-   Company:     ELITEDATA  
+ Reviewer: Ollear Mena
+   Company: ELITEDATA S.L. 
    Script:      Exploring_JSON_Relational_Duality_Views.sql  
    Lab Title:   Exploring JSON-Relational Duality Views in Oracle Database 26ai  
    Description: Demonstrates how to create, query, and manage JSON Relational 
@@ -195,4 +195,5 @@ DROP VIEW attendeev;
 DROP VIEW speakerv;
 DROP VIEW schedulev;
 DROP VIEW speakerv;
+
 
