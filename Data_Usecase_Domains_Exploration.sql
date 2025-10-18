@@ -1,3 +1,17 @@
+/* ===============================================================
+   Author:      Ollear Mena
+   Company:     ELITEDATA
+   Script:      Data_Usecase_Domains_Exploration.sql  
+   Lab Title:   Data Use Case – Domains Exploration in Oracle Database 26ai  
+   Description: Demonstrates how to create, explore, and apply both 
+                system-defined and user-defined DOMAINS in Oracle 26ai.  
+                Includes domain constraints, ENUM definitions, and 
+                integration of domains into table structures.  
+   References:  https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/
+   Version:     1.0  
+   Date:        SYSDATE  
+   =============================================================== */
+
 --Creating and Implementing Data Usecase Domains
 -- Drop the domain if it already exists
 drop domain if exists price force;
@@ -172,4 +186,5 @@ drop table if exists orders purge;
 drop domain if exists personal_contact_dom force;
 drop domain if exists business_contact_dom force;
 drop domain if exists default_contact_dom force;
+
 drop domain if exists order_status_domain force;
