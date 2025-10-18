@@ -1,3 +1,18 @@
+/* ===============================================================
+   Author:      OLLEAR MENA 
+   Company:     ELITEDATA 
+   Script:      Boolean.sql  
+   Lab Title:   Working with the BOOLEAN Data Type in Oracle Database 26ai  
+   Description: Demonstrates the use of the native BOOLEAN data type 
+                introduced in Oracle 26ai. Includes table creation, 
+                data insertion, conditional queries, updates, and PL/SQL 
+                operations using TRUE, FALSE, and NULL values.  
+   References:  https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/
+   Version:     1.0  
+   Date:        SYSDATE  
+   =============================================================== */
+
+
 DROP TABLE IF EXISTS MOVIES CASCADE CONSTRAINT;
 
 -- Create MOVIES table with a boolean column
@@ -61,5 +76,6 @@ END;
 SELECT movie_id, title
 FROM movies
 WHERE recommended = TRUE;
+
 
 DROP TABLE IF EXISTS MOVIES CASCADE CONSTRAINT;
