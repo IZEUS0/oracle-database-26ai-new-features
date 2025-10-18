@@ -1,6 +1,6 @@
 /* ===============================================================
-   Author:      OLLEAR MENA 
-   Company:     ELITEDATA 
+ Reviewer: Ollear Mena
+   Company: ELITEDATA S.L. 
    Script:      Boolean.sql  
    Lab Title:   Working with the BOOLEAN Data Type in Oracle Database 26ai  
    Description: Demonstrates the use of the native BOOLEAN data type 
@@ -79,3 +79,4 @@ WHERE recommended = TRUE;
 
 
 DROP TABLE IF EXISTS MOVIES CASCADE CONSTRAINT;
+
