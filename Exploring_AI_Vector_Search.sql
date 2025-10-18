@@ -2,7 +2,7 @@
    Author:      Ollear Mena 
    Company:     ELITEDATA 
    Script:      Exploring_AI_Vector_Search.sql  
-   Lab Title:   Exploring AI Vector Search in Oracle Database 23ai  
+   Lab Title:   Exploring AI Vector Search in Oracle Database 26ai  
    Description: Demonstrates how to create and query VECTOR columns
                 using Oracle AI Vector Search capabilities.  
    References:  https://www.oracle.com/database/ai-vector-search/
@@ -285,4 +285,5 @@ DROP TABLE if exists movies CASCADE CONSTRAINTS;
 DROP TABLE if exists customers CASCADE CONSTRAINTS;
 
 DROP TABLE if exists ratings CASCADE CONSTRAINTS;
+
 
