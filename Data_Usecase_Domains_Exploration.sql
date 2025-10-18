@@ -1,6 +1,6 @@
 /* ===============================================================
-   Author:      Ollear Mena
-   Company:     ELITEDATA
+ Reviewer: Ollear Mena
+   Company: ELITEDATA S.L. 
    Script:      Data_Usecase_Domains_Exploration.sql  
    Lab Title:   Data Use Case – Domains Exploration in Oracle Database 26ai  
    Description: Demonstrates how to create, explore, and apply both 
@@ -188,3 +188,4 @@ drop domain if exists business_contact_dom force;
 drop domain if exists default_contact_dom force;
 
 drop domain if exists order_status_domain force;
+
