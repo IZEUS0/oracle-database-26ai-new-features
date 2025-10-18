@@ -1,0 +1,207 @@
+User BOB dropped.
+
+Elapsed: 00:00:00.006
+
+
+User SALLY dropped.
+
+Elapsed: 00:00:00.005
+
+
+User BOB created.
+
+Elapsed: 00:00:02.731
+
+
+User SALLY created.
+
+Elapsed: 00:00:02.646
+
+
+Grant succeeded.
+
+Elapsed: 00:00:00.042
+
+
+Grant succeeded.
+
+Elapsed: 00:00:00.008
+
+
+Grant succeeded.
+
+Elapsed: 00:00:00.006
+
+
+Grant succeeded.
+
+Elapsed: 00:00:00.006
+
+
+Grant succeeded.
+
+Elapsed: 00:00:00.007
+
+
+Grant succeeded.
+
+Elapsed: 00:00:00.006
+
+
+GRANTEE PRIVILEGE             SCHEMA ADMIN_OPTION COMMON INHERITED 
+------- --------------------- ------ ------------ ------ --------- 
+BOB     EXECUTE ANY PROCEDURE SALLY  NO           NO     NO        
+BOB     SELECT ANY SEQUENCE   SALLY  NO           NO     NO        
+BOB     DELETE ANY TABLE      SALLY  NO           NO     NO        
+BOB     UPDATE ANY TABLE      SALLY  NO           NO     NO        
+BOB     INSERT ANY TABLE      SALLY  NO           NO     NO        
+BOB     SELECT ANY TABLE      SALLY  NO           NO     NO        
+
+
+Elapsed: 00:00:00.060
+6 rows selected.
+
+
+Revoke succeeded.
+
+Elapsed: 00:00:00.025
+
+
+Revoke succeeded.
+
+Elapsed: 00:00:00.009
+
+
+Revoke succeeded.
+
+Elapsed: 00:00:00.009
+
+
+Revoke succeeded.
+
+Elapsed: 00:00:00.009
+
+
+Revoke succeeded.
+
+Elapsed: 00:00:00.009
+
+
+Revoke succeeded.
+
+Elapsed: 00:00:00.009
+
+
+User BOB dropped.
+
+Elapsed: 00:00:02.651
+
+
+User SALLY dropped.
+
+Elapsed: 00:00:02.566
+
+
+System priv: CREATE CUBE
+System priv: CREATE CUBE BUILD PROCESS
+System priv: CREATE CUBE DIMENSION
+System priv: CREATE DIMENSION
+System priv: CREATE DOMAIN
+System priv: CREATE JOB
+System priv: CREATE MINING MODEL
+System priv: CREATE MLE
+System priv: CREATE SESSION
+System priv: DEBUG CONNECT SESSION
+System priv: EXECUTE DYNAMIC MLE
+System priv: FORCE TRANSACTION
+System priv: ON COMMIT REFRESH
+Object priv: SELECT SYS.DBA_PENDING_TRANSACTIONS
+Object priv: EXECUTE SYS.DBMS_REDACT
+Object priv: EXECUTE SYS.DBMS_RLS
+Object priv: EXECUTE SYS.JAVASCRIPT
+Object priv: READ SYS.V_$PARAMETER
+Object priv: READ SYS.V_$STATNAME
+Role priv: CTXAPP
+  System priv: CREATE SEQUENCE
+  Object priv: EXECUTE CTXSYS.CTX_ANL
+  Object priv: EXECUTE CTXSYS.CTX_DDL
+  Object priv: EXECUTE CTXSYS.CTX_ENTITY
+  Object priv: EXECUTE CTXSYS.CTX_OUTPUT
+  Object priv: EXECUTE CTXSYS.CTX_THES
+  Object priv: EXECUTE CTXSYS.CTX_ULEXER
+  Object priv: INSERT CTXSYS.DR$DICTIONARY
+  Object priv: DELETE CTXSYS.DR$DICTIONARY
+  Object priv: SELECT CTXSYS.DR$DICTIONARY
+  Object priv: UPDATE CTXSYS.DR$DICTIONARY
+  Object priv: INSERT CTXSYS.DR$THS
+  Object priv: INSERT CTXSYS.DR$THS_BT
+  Object priv: INSERT CTXSYS.DR$THS_FPHRASE
+  Object priv: UPDATE CTXSYS.DR$THS_PHRASE
+  Object priv: INSERT CTXSYS.DR$THS_PHRASE
+  Object priv: EXECUTE CTXSYS.DRIENTL
+  Object priv: EXECUTE CTXSYS.DRITHSL
+Role priv: RESOURCE
+  System priv: CREATE ANALYTIC VIEW
+  System priv: CREATE ATTRIBUTE DIMENSION
+  System priv: CREATE CLUSTER
+  System priv: CREATE HIERARCHY
+  System priv: CREATE INDEXTYPE
+  System priv: CREATE MATERIALIZED VIEW
+  System priv: CREATE OPERATOR
+  System priv: CREATE PROCEDURE
+  System priv: CREATE PROPERTY GRAPH
+  System priv: CREATE SEQUENCE
+  System priv: CREATE SYNONYM
+  System priv: CREATE TABLE
+  System priv: CREATE TRIGGER
+  System priv: CREATE TYPE
+  System priv: CREATE VIEW
+  Role priv: SODA_APP
+    Object priv: EXECUTE XDB.DBMS_SODA_ADMIN
+    Object priv: EXECUTE XDB.DBMS_SODA_USER_ADMIN
+    Object priv: READ XDB.JSON$USER_COLLECTION_METADATA
+
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.774
+
+
+User OLLEAR dropped.
+
+Elapsed: 00:00:00.006
+
+
+User OLLEAR created.
+
+Elapsed: 00:00:02.722
+
+
+No data found
+
+
+Grant succeeded.
+
+Elapsed: 00:00:00.020
+
+
+GRANTED_ROLE      
+----------------- 
+DB_DEVELOPER_ROLE 
+
+
+Elapsed: 00:00:00.003
+1 rows selected.
+
+
+Revoke succeeded.
+
+Elapsed: 00:00:00.043
+
+
+No data found
+
+
+User OLLEAR dropped.
+
+Elapsed: 00:00:02.629
