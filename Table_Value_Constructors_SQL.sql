@@ -1,6 +1,6 @@
 /* ===============================================================
-   Author:      OLLEAR MENA 
-   Company:     ELITEDATA  
+   Reviewer: Ollear Mena
+   Company: ELITEDATA S.L. 
    Script:      Table_Value_Constructors_SQL.sql  
    Lab Title:   Table Value Constructors (TVC) in Oracle Database 26ai  
    Description: Demonstrates the use of Table Value Constructors
@@ -119,3 +119,4 @@ WHEN NOT MATCHED THEN
 DROP TABLE EMPLOYEES cascade constraints;
 
 DROP TABLE PRODUCTS cascade constraints;
+
