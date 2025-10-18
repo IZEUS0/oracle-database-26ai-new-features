@@ -1,3 +1,18 @@
+/* ===============================================================
+   Author:      OLLEAR MENA 
+   Company:     ELITEDATA  
+   Script:      Table_Value_Constructors_SQL.sql  
+   Lab Title:   Table Value Constructors (TVC) in Oracle Database 26ai  
+   Description: Demonstrates the use of Table Value Constructors
+                to define inline row sets in SQL statements.  
+                Includes examples for INSERT, UPDATE, DELETE, and MERGE 
+                operations using VALUES clauses.  
+   References:  https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/
+   Version:     1.0  
+   Date:        SYSDATE  
+   =============================================================== */
+
+
 DROP TABLE if exists EMPLOYEES cascade constraints;
 DROP TABLE if exists PRODUCTS cascade constraints;
 
@@ -102,4 +117,5 @@ WHEN NOT MATCHED THEN
     VALUES (source.product_id, source.product_name, source.price, source.category);
 
 DROP TABLE EMPLOYEES cascade constraints;
+
 DROP TABLE PRODUCTS cascade constraints;
