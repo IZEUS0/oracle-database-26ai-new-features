@@ -1,6 +1,19 @@
+/* ===============================================================
+   Author:      OLLEAR MENA
+   Company:     ELITEDATA  
+   Script:      Exploring_JSON_Relational_Duality_Views.sql  
+   Lab Title:   Exploring JSON-Relational Duality Views in Oracle Database 26ai  
+   Description: Demonstrates how to create, query, and manage JSON Relational 
+                Duality Views, enabling unified access to data in both 
+                relational and JSON document formats.  
+                Includes table creation, data insertion, duality view 
+                definition, and query examples with error handling.  
+   References:  https://docs.oracle.com/en/database/oracle/oracle-database/23/adjsn/
+   Version:     1.0  
+   Date:        SYSDATE  
+   =============================================================== */
+
 select sysdate;
---Oracle Database 23ai New Features > Exploring JSON Relational Duality Views - the Fundamentals
---https://blogs.oracle.com/database/post/json-relational-duality-app-dev
 
 create table attendee(
 aid      number,
@@ -182,3 +195,4 @@ DROP VIEW attendeev;
 DROP VIEW speakerv;
 DROP VIEW schedulev;
 DROP VIEW speakerv;
+
